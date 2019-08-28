@@ -1,1 +1,2 @@
 eventsManager.getAllEvents();
+brewManager.getAllBreweries()
