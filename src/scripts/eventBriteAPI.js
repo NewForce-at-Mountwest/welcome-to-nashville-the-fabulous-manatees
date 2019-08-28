@@ -1,5 +1,5 @@
 //fetching eventbrite API and 
-const apiManager = {
+const eventAPIManager = {
   
   getAllMeetups: (searchField) => {
     
@@ -14,14 +14,22 @@ const apiManager = {
         }
     ).then(response => response.json())
     .then(myParsedMeetUp => {
-      myParsedMeetUp.forEach(meetUp => {
-        console.log(meetUp)
-      })
-    } 
-      )
+      myParsedMeetUp.forEach(singleEvent => console.log(singleEvent))
+    }
   }
 };
+}
 
+
+// const brewManager = {
+//   getAllBreweries: () => {
+//       return fetch(`https://api.openbrewerydb.org/breweries?by_state=tennessee&by_city=nashville`).then(response => response.json())
+//           .then(myParsedBrewies => {
+//               myParsedBrewies.forEach
+//               (singleBrewery => console.log(singleBrewery))
+//           })
+//   }
+// };
 
 
 //AZ7K4XTOKFMW4X2UKG5O
