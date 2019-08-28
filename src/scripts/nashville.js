@@ -4,3 +4,4 @@ apiManager.getAllMeetups("ice cream")
 
 
 //response from eventBrite search 
+brewManager.getAllBreweries()
