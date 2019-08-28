@@ -1,7 +1,9 @@
 
+// fetch events from TicketMaster and parse them to JS
+
 const eventsManager = {
     getAllEvents:() => {
-      // fetch events from TicketMaster and parse them to JS
+      
       return fetch(`https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&dmaId=343&apikey=KGTfImEiMhu3Zb5ZOmyywUeIuwHACDxS`)
       .then(response => response.json()) 
       .then(parsedEvents => {
