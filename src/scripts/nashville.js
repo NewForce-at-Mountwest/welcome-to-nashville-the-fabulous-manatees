@@ -7,3 +7,4 @@ eventAPIManager.getAllMeetups(inputValue)
 eventsManager.getAllEvents();
 // parksPull.getAllParks()
 brewManager.getAllBreweries()
+parksPull.getAllParks();

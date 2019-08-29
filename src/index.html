@@ -18,9 +18,9 @@
                 <input type="text" class="parks" placeholder="Search for Parks">
                 <button class="searchButton">Search</button>
             </p>
-            <p class="input">
+            <p id="input">
                 <input type="text" class="breweries" placeholder="Search for Breweries">
-                <button class="searchButton">Search</button>
+                <button id="brewSearchButton">Search</button>
             </p>
             <p class="input">
                 <input type="text" class="meetups" placeholder="Search for Meetups">
@@ -34,13 +34,18 @@
         <div id="resultsBox">
             <h3>Results for Stuff to Do Today</h3>
             <p id="outputParks"></p>
-            <p id="outputBreweries"></p>
+            <section id="outputBreweries"></section>
             <p id="outputMeetups"></p>
             <p id="outputConcerts"></p>
         </div>
     </section>
     
    
+
+
+     <script src="scripts/eventBriteAPI.js"></script>
+    <script src="scripts/metrogovAPI.js"></script>
+    <script src="scripts/ticketMasterAPI.js"></script>
     <script src="scripts/eventListener.js"></script>
     <script src="scripts/metrogovAPI.js"></script>
     <script src="scripts/eventBriteAPI.js"></script>
@@ -48,12 +53,15 @@
     <script src="scripts/printToDOM.js"></script>
     <script src="scripts/breweryAPI.js"></script>
     <script src="scripts/nashville.js"></script>
-    
+
 </body>
 
 
 
-  
+
 
 </html>
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
