@@ -1,23 +1,24 @@
+//Function to grab user input value and send to eventbrite.js for searching API
 
 
 document.querySelector(".meetUpsSearchButton").addEventListener("click", function() {   
         console.log("You clicked the meetups search button from the event listener js")  
-        const meetUpsInputValue = document.querySelector(".meetUps").value
-        console.log(meetUpsInputValue)
+        const meetUpsValue = document.querySelector(".meetups").value
+        console.log(meetUpsValue)
         
-    return
+  return
   })
- 
 
-
-
-  
-
-   
-  
-
-//   "meetUpsSearchButton"
-
+//   const apiManagerBreweries ={
+//     getAllBreweries: () =>{
+//         const searchBarInput = document.querySelector("#breweryInput").value
+//         console.log(searchBarInput)
+//         return fetch(`https://api.openbrewerydb.org/breweries?by_state=tennessee&by_city=${searchBarInput}`)
+//         .then(response => response.json())
+//         .then(breweryToPrint=>{
+//             console.log(breweryToPrint)
+//             breweryToPrint.forEach(singleBrewery =>{
+//                 document.querySelector("#bigOlContainer").innerHTML += buildBreweryHtml.buildEntryCard(singleBrewery)
 
 //   <p id="outputMeetups"></p>
 
@@ -28,4 +29,3 @@ document.querySelector(".meetUpsSearchButton").addEventListener("click", functio
 
 
 
-// document.querySelector("#outputMeetups").innerHTML = 'click'
