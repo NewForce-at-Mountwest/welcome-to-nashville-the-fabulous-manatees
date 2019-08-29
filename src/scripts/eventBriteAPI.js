@@ -16,7 +16,7 @@ const eventAPIManager = {
       .then(response => response.json())
       .then(myParsedMeetUp => {
         myParsedMeetUp.events.forEach
-          (singleEvent => console.log(singleEvent))
+          // (singleEvent => console.log(singleEvent))
       })
   }
 };

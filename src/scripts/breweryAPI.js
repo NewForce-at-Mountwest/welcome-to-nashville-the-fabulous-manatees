@@ -5,7 +5,7 @@ const brewManager = {
         return fetch(`https://api.openbrewerydb.org/breweries?by_state=tennessee&by_city=nashville`).then(response => response.json())
             .then(myParsedBrewies => {
                 myParsedBrewies.forEach
-                (singleBrewery => console.log(singleBrewery))
+                // (singleBrewery => console.log(singleBrewery))
             })
     }
 };
