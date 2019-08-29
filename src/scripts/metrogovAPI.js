@@ -13,3 +13,4 @@ const parksPull = {
         park.forEach(park=>console.log(park))
     })
 }}
+
