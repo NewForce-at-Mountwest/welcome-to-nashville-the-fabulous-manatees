@@ -8,7 +8,7 @@ ${brewName.name}
 
 
 // loop through PARKS and see if they have searched criterion
-const criteria = document.querySelector(".parks").value
+// const criteria = document.querySelector(".parks").value
 const parkFx = {
  searchParks: (searchCriteria, parksData) => {
     for (i = 0; i < parksData.length; i++) {
