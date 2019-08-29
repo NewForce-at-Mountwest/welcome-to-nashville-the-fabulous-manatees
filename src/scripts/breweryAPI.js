@@ -1,12 +1,13 @@
 // pulling breweries from external API and forEaching through them all and printing them to the console.
 
 const brewManager = {
-    getAllBreweries: () => {
-        return fetch(`https://api.openbrewerydb.org/breweries?by_state=tennessee&by_city=nashville`).then(response => response.json())
+    getAllBreweries: (brewInput) => {
+        return fetch(`https://api.openbrewerydb.org/breweries?by_city=nashville&by_name=${brewInput}`).then(response => response.json())
         // Parsing breweries from json to javascript
             .then(myParsedBrewies => {
-                myParsedBrewies.forEach
-                (singleBrewery => console.log(singleBrewery))
+                myParsedBrewies.forEach(singleBrew=>{
+                print(singleBrew)
+                })
             })
     }
 };
