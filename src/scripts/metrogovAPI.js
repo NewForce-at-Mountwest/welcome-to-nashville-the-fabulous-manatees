@@ -11,9 +11,10 @@ const criteria = document.querySelector(".parks").value
 
 function searchParks(searchCriteria, parksData) {
     for (i = 0; i < parksData.length; i++) {
-        if (parksData.searchCriteria === "Yes") {
+        // console.log(parksData[i])
+        if (parksData[i][searchCriteria] === "Yes") {
             const parksOutput = document.querySelector("#outputParks")
-            parksOutput.innerHTML = `<p>${parksData.park_name} at ${parksData.mapped_location_address} in ${parksData.mapped_location_city} has a ${searchCriteria}</p>`
+            parksOutput.innerHTML += `<p>${parksData[i].park_name} at ${parksData[i].mapped_location_address} in ${parksData[i].mapped_location_city} has a ${searchCriteria}</p>`
         }
     }
 };
