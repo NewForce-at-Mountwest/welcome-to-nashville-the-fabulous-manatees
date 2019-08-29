@@ -3,5 +3,7 @@
 eventAPIManager.getAllMeetups("ice cream")
 
 
-//response from eventBrite search 
+
+eventsManager.getAllEvents();
+parksPull.getAllParks()
 brewManager.getAllBreweries()
