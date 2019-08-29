@@ -4,7 +4,7 @@
 const eventsManager = {
     getAllEvents:() => {
       
-      return fetch(`https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&dmaId=343&apikey=KGTfImEiMhu3Zb5ZOmyywUeIuwHACDxS`)
+      return fetch(`https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&dmaId=343&genre={$concertGenreInput}&apikey=KGTfImEiMhu3Zb5ZOmyywUeIuwHACDxS`)
       .then(response => response.json()) 
       .then(parsedEvents => {
           console.log(parsedEvents._embedded.events)
@@ -12,3 +12,11 @@ const eventsManager = {
         })
     }
 };
+
+
+
+
+
+
+
+
