@@ -5,5 +5,4 @@ eventAPIManager.getAllMeetups("ice cream")
 
 
 eventsManager.getAllEvents();
-parksPull.getAllParks()
-brewManager.getAllBreweries()
+parksPull.getAllParks();
