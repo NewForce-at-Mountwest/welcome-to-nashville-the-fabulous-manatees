@@ -1,4 +1,4 @@
-const concertSearchButton = document.querySelector(".concerts-searchButton");
+const concertSearchButton = document.querySelector("#concertSearchButton");
 
         console.log(concertSearchButton);
 
@@ -9,16 +9,5 @@ const concertSearchButton = document.querySelector(".concerts-searchButton");
             console.log(concertGenreInput);
 
         }); 
-        
-        
-        const concertResultsOutput = document.querySelector("#outputConcerts");
-        concertResultsOutput.addEventListener("click", function() {
-        if (event.target.id === "#concerts-searchButton") {
-      
-          const concertHTMLstring = `test`
-      
-          concertResultsOutput.innerHTML += concertHTMLstring
-      
-        }
-    });           
+          
 
