@@ -8,9 +8,9 @@ ${brewName.name}
 
 function print (genreName){
 
-//     if (genreName.classifications[0].genre.name === concertGenreInput){
     const printConcert = document.querySelector("#outputConcerts")
-    printConcert.innerHTML+=`<p>
+    printConcert.innerHTML+=`
+    <p>
     ${genreName.name}<br>
     ${genreName.classifications[0].genre.name}
     </p>
