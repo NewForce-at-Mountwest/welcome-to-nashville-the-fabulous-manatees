@@ -7,7 +7,7 @@ const brewManager = {
         // Parsing breweries from json to javascript
             .then(myParsedBrewies => {
                 myParsedBrewies.forEach(singleBrew=>{
-                print(singleBrew)
+                Brewprint(singleBrew)
                 })
             })
     }
