@@ -8,9 +8,13 @@ const eventsManager = {
       .then(response => response.json()) 
       .then(parsedEvents => {
           console.log(parsedEvents._embedded.events)
-          parsedEvents._embedded.events.forEach(singleEvents => console.log(singleEvents))
+          parsedEvents._embedded.events.forEach(singleEvents =>{
+            
+            console.log(singleEvents)
+            print(singleEvents)
         })
-    }
+    })
+  }  
 };
 
 

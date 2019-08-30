@@ -4,5 +4,5 @@ eventAPIManager.getAllMeetups("ice cream")
 
 
 
-eventsManager.getAllEvents();
+// eventsManager.getAllEvents();
 parksPull.getAllParks();
