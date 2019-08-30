@@ -7,9 +7,10 @@ ${brewName.name}
 <button id="brewSaveBTN">Save</button>
 `}
 
+// Print TicketMaster results
 function concertPrintToScreen (concertResults){
 
-    const printConcert = document.querySelector("#outputConcerts")
+    const printConcert = document.querySelector("#resultsBox")
 
     printConcert.innerHTML+=
     `
@@ -41,4 +42,4 @@ const parkFx = {
         }
     }
 }
-}
+};
