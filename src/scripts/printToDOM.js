@@ -11,6 +11,12 @@ printBrew.innerHTML=""
 
 
 
+//Print Meetups search results to the DOM
+function printMeetUpHTML (meetUps){
+    const printMeetUps= document.querySelector("#outputMeetups")
+    printMeetUps.innerHTML+=`<p>${meetUps.name.html}</p>
+    <button id="meetUpsSaveBTN">Save</button>
+    `}
 // loop through PARKS and see if they have searched criterion
 // const criteria = document.querySelector(".parks").value
 const parkFx = {
