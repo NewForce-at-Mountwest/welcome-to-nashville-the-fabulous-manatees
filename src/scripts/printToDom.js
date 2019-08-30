@@ -9,7 +9,36 @@ ${brewName.name}
 
 }
 
+// const concertSearchButton = document.querySelector("#concertSearchButton");
 
+//         // console.log(concertSearchButton);
+
+//             concertSearchButton.addEventListener("click", function() {
+            
+//             const concertInput = document.querySelector(".concerts-input").value;
+            
+//             console.log(concertInput);
+
+//             ticketManager.getAllEvents(concertInput)
+
+//             });
+
+function concertPrintToScreen (concertResults){
+
+    // const clearConcertInput = document.querySelector("#resultBox")
+    // clearConcertInput.innerHTML = ``
+    const printConcert = document.querySelector("#resultsBox")
+
+    printConcert.innerHTML+=
+    `
+    <p>
+    ${concertResults.name}<br>
+    ${concertResults.classifications[0].genre.name}
+    </p>
+    <button id="concertSaveBTN">Save</button>
+    `
+    
+};
 
 //Print Meetups search results to the DOM
 function printMeetUpHTML (meetUps){

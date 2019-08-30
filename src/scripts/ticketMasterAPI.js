@@ -11,10 +11,10 @@ const ticketManager = {
           parsedEvents._embedded.events.forEach(singleEvents =>{
             
             concertPrintToScreen(singleEvents)
-            
+            document.querySelector(".concerts-input").value=""
             
           })
-          document.querySelector(".concerts-input").value=""
+          
       })
   }  
 };
