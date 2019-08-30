@@ -17,6 +17,7 @@ const eventAPIManager = {
       .then(myParsedMeetUp => {
         myParsedMeetUp.events.forEach(singleEvent => printMeetUpHTML(singleEvent))
       })
+      
   }
 };
 
@@ -29,41 +30,5 @@ const eventAPIManager = {
 
 
 
-
-// const brewManager = {
-//   getAllBreweries: (brewInput) => {
-//       return fetch(`https://api.openbrewerydb.org/breweries?by_city=nashville&by_name=${brewInput}`).then(response => response.json())
-//       // Parsing breweries from json to javascript
-//           .then(myParsedBrewies => {
-//               myParsedBrewies.forEach(singleBrew=>{
-//               print(singleBrew)
-//               })
-//           })
-//   }
-// };
-
-
-// const brewManager = {
-//   getAllBreweries: () => {
-//       return fetch(`https://api.openbrewerydb.org/breweries?by_state=tennessee&by_city=nashville`).then(response => response.json())
-//           .then(myParsedBrewies => {
-//               myParsedBrewies.forEach
-//               (singleBrewery => console.log(singleBrewery))
-//           })
-//   }
-// };
-
-
-//AZ7K4XTOKFMW4X2UKG5O
-
-//   You need to put your token in the URL of your fetch request and in the Authorization header
-//  You also need to add `"Accept: "application/json"` to the headers.
-//  ```js
-// fetch(`https://www.eventbriteapi.com/v3/events/search/?q=nashville_${searchField}&token=${yourToken}`, {
-//   headers: {
-//     "Authorization": `Bearer ${yourToken}`,
-//     "Accept": "application/json"
-//   }
-// })
 
 
