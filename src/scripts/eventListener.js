@@ -33,6 +33,9 @@ parkSearchButton.addEventListener("click", function () {
     // pull from json server since api is down and looping through array to list all objects with search criteria, calling function 
     const criteria = document.querySelector(".parks").value.replace(" ","_")
     document.querySelector("#outputParks").innerHTML =""
+    document.querySelector("#outputBreweries").innerHTML =""
+    document.querySelector("#outputMeetups").innerHTML =""
+    document.querySelector("#outputConcerts").innerHTML =""
     const parksPull = {
         getAllParks: () => {
             return fetch("http://localhost:3000/parks")
