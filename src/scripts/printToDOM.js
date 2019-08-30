@@ -6,7 +6,7 @@ ${brewName.name}
 </p>
 <button id="brewSaveBTN">Save</button>
 `
-printBrew.innerHTML=""
+
 }
 
 

@@ -10,7 +10,6 @@ const brewManager = {
                 Brewprint(singleBrew)
                 })
                 document.querySelector(".breweries").value=""
-
             })
     }
 };

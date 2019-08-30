@@ -1,8 +1,8 @@
 //Function to grab user input value and send to eventbrite.js for searching API
 
-const meetUpsSearchButton = 
-document.querySelector(".meetUpsSearchButton").addEventListener("click", function() {   
-        console.log("You clicked the meetups search button from the event listener js")  
+const meetUpsSearchButton =
+document.querySelector(".meetUpsSearchButton").addEventListener("click", function() {
+        console.log("You clicked the meetups search button from the event listener js")
         let meetUpsValue = document.querySelector(".meetups").value
        eventAPIManager.getAllMeetups(meetUpsValue)
        console.log(meetUpsValue)
@@ -21,7 +21,7 @@ brewSearchBtn.addEventListener("click",function(){
 
     let brewSearch = document.querySelector(".breweries").value
     brewManager.getAllBreweries(brewSearch)
-    document.querySelector("#outputBreweries")
+    document.querySelector("#resultsBox")
 
 
 })
