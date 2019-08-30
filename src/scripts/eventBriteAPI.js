@@ -17,6 +17,7 @@ const eventAPIManager = {
       .then(myParsedMeetUp => {
         myParsedMeetUp.events.forEach(singleEvent => printMeetUpHTML(singleEvent))
       })
+      
   }
 };
 

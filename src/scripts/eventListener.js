@@ -3,12 +3,15 @@
 const meetUpsSearchButton = 
 document.querySelector(".meetUpsSearchButton").addEventListener("click", function() {   
         console.log("You clicked the meetups search button from the event listener js")  
-        let meetUpsValue = document.querySelector(".meetups").value
+        const clearInput = document.querySelector("#resultsBox")
+        clearInput.innerHTML = ` `
+            let meetUpsValue = document.querySelector(".meetups").value
        eventAPIManager.getAllMeetups(meetUpsValue)
        console.log(meetUpsValue)
+       
   })
 
-
+  
 
 
 
