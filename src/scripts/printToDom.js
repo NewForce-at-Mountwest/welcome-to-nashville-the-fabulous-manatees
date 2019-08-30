@@ -9,7 +9,7 @@ ${brewName.name}
 
 // TicketMaster print results to screen
 
-function print (concertResult){
+function printToScreen(concertResult){
 
     const printConcert = document.querySelector("#outputConcerts")
     
