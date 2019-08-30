@@ -11,8 +11,8 @@ ${brewName.name}
 //Print Meetups search results to the DOM
 function printMeetUpHTML (meetUps){
     const printMeetUps= document.querySelector("#resultsBox") 
-    printMeetUps.innerHTML+=`<p>${meetUps.name.html}</p>`
-    // <button id="meetUpsSaveBTN">Save</button>
+    printMeetUps.innerHTML+=`<p>${meetUps.name.html}</p>
+    <button id="meetUpsSaveBTN">Save</button>`
     }
 
 
