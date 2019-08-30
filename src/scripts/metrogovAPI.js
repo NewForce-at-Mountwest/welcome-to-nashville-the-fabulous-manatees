@@ -1,15 +1,11 @@
-// ### Parks API
+// this is commented out because it wont work when i move it off of the eventListener script, so it lives there inside the eventListener instead.
 
-// fetch(`https://data.nashville.gov/resource/xbru-cfzi.json?${parkInput}=Yes`, {
-//   "$$app_token": yourToken
-// })
-
-// pull from json server since api is down and looping through array to list all objects
-const parksPull = {
-    getAllParks: ()=>{
-        fetch("http://localhost:3000/parks")
-    .then(parkLocations => parkLocations.json())
-    .then(park=>{
-        park.forEach(park=>console.log(park))
-    })
-}}
+// const criteria = document.querySelector(".parks").value
+// const parksPull = {
+//     getAllParks: () => {
+//         return fetch("http://localhost:3000/parks")
+//             .then(parkLocations => parkLocations.json())
+//             .then(parks => parkFx.searchParks(criteria, parks)
+//                 )
+//             }
+//     }
