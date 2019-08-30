@@ -6,16 +6,20 @@ ${brewName.name}
 <button id="brewSaveBTN">Save</button>
 `}
 
-function print (genreName){
+
+// TicketMaster print results to screen
+
+function print (concertResult){
 
     const printConcert = document.querySelector("#outputConcerts")
-    printConcert.innerHTML+=`
+    
+    printConcert.innerHTML+=
+    `
     <p>
-    ${genreName.name}<br>
-    ${genreName.classifications[0].genre.name}
+    ${concertResult.name}<br>
+    ${concertResult.classifications[0].genre.name}
     </p>
-    <button id="concertSaveBTN">Save</button>`
-//     }
+    <button id="concertSaveBTN">Save</button>
+    `
+
 };
-//array
-// [""0""].classifications[""0""].genre.name

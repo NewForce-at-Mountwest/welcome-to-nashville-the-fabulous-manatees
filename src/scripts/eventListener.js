@@ -1,3 +1,5 @@
+
+// TicketMaster Search Button - Event Listener - Store input into variable 
 const concertSearchButton = document.querySelector("#concertSearchButton");
 
         // console.log(concertSearchButton);
@@ -7,8 +9,8 @@ const concertSearchButton = document.querySelector("#concertSearchButton");
             const concertInput = document.querySelector(".concerts-input").value;
             
             console.log(concertInput);
-            
-            eventsManager.getAllEvents(concertInput)
+
+            ticketManager.getAllEvents(concertInput)
 
             });
     
