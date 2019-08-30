@@ -1,11 +1,14 @@
 // this is the function that notates through the API and provides results that are matching the value of the search bar and prints it to the DOM element for the breweries
 function Brewprint (brewName){
-const printBrew= document.querySelector("#outputBreweries")
+const printBrew= document.querySelector("#resultsBox")
 printBrew.innerHTML+=`<p>
 ${brewName.name}
 </p>
 <button id="brewSaveBTN">Save</button>
-`}
+`
+
+}
+
 
 
 //Print Meetups search results to the DOM
@@ -15,22 +18,7 @@ function printMeetUpHTML (meetUps){
     <button id="meetUpsSaveBTN">Save</button>`
     }
 
-    function concertPrintToScreen (concertResults){
 
-        // const clearConcertInput = document.querySelector("#resultBox")
-        // clearConcertInput.innerHTML = ``
-        const printConcert = document.querySelector("#resultsBox")
-    
-        printConcert.innerHTML+=
-        `
-        <p>
-        ${concertResults.name}<br>
-        ${concertResults.classifications[0].genre.name}
-        </p>
-        <button id="concertSaveBTN">Save</button>
-        `
-        
-    };
 
 
 
