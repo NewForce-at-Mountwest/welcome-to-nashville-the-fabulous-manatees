@@ -9,6 +9,7 @@ const brewManager = {
                 myParsedBrewies.forEach(singleBrew=>{
                 Brewprint(singleBrew)
                 })
+                document.querySelector(".breweries").value=""
             })
     }
 };
