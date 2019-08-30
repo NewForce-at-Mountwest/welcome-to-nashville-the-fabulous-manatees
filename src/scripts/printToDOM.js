@@ -19,8 +19,8 @@ const parkFx = {
  searchParks: (searchCriteria, parksData) => {
     for (i = 0; i < parksData.length; i++) {
         if (parksData[i][searchCriteria] === "Yes") {
-            const parksOutput = document.querySelector("#outputParks")
-            parksOutput.innerHTML += `<p>${parksData[i].park_name} at ${parksData[i].mapped_location_address} in ${parksData[i].mapped_location_city} has a ${searchCriteria}</p><button class="saveButton">Save</button>`
+            const resultsBox = document.querySelector("#resultsBox")
+            resultsBox.innerHTML += `<p>${parksData[i].park_name} at ${parksData[i].mapped_location_address} in ${parksData[i].mapped_location_city} has a ${searchCriteria}</p><button class="saveButton">Save</button>`
         }
     }
 }
