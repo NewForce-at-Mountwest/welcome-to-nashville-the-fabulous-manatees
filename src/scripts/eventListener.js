@@ -22,6 +22,7 @@ brewSearchBtn.addEventListener("click",function(){
     let brewSearch = document.querySelector(".breweries").value
     brewManager.getAllBreweries(brewSearch)
     document.querySelector("#resultsBox")
+    document.querySelector("#resultsBox").innerHTML=""
 
 
 })
