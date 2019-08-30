@@ -7,21 +7,6 @@ ${brewName.name}
 <button id="brewSaveBTN">Save</button>
 `}
 
-// Print TicketMaster results
-function concertPrintToScreen (concertResults){
-
-    const printConcert = document.querySelector("#resultsBox")
-
-    printConcert.innerHTML+=
-    `
-    <p>
-    ${concertResults.name}<br>
-    ${concertResults.classifications[0].genre.name}
-    </p>
-    <button id="concertSaveBTN">Save</button>
-    `
-};
-
 
 //Print Meetups search results to the DOM
 function printMeetUpHTML (meetUps){
@@ -42,4 +27,4 @@ const parkFx = {
         }
     }
 }
-};
+}
