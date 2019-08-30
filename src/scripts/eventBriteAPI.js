@@ -15,12 +15,32 @@ const eventAPIManager = {
     )
       .then(response => response.json())
       .then(myParsedMeetUp => {
-        myParsedMeetUp.events.forEach
-          // (singleEvent => console.log(singleEvent))
+        myParsedMeetUp.events.forEach(singleEvent => printMeetUpHTML(singleEvent))
       })
   }
 };
 
+
+
+
+
+
+
+
+
+
+
+// const brewManager = {
+//   getAllBreweries: (brewInput) => {
+//       return fetch(`https://api.openbrewerydb.org/breweries?by_city=nashville&by_name=${brewInput}`).then(response => response.json())
+//       // Parsing breweries from json to javascript
+//           .then(myParsedBrewies => {
+//               myParsedBrewies.forEach(singleBrew=>{
+//               print(singleBrew)
+//               })
+//           })
+//   }
+// };
 
 
 // const brewManager = {
