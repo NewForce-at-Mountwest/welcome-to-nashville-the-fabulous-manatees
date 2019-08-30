@@ -1,17 +1,17 @@
 //Function to grab user input value and send to eventbrite.js for searching API
 
-const meetUpsSearchButton = 
-document.querySelector(".meetUpsSearchButton").addEventListener("click", function() {   
-        //console.log("You clicked the meetups search button from the event listener js")  
+const meetUpsSearchButton =
+document.querySelector(".meetUpsSearchButton").addEventListener("click", function() {
+        //console.log("You clicked the meetups search button from the event listener js")
         const clearInput = document.querySelector("#resultsBox")
         clearInput.innerHTML = ` `
             let meetUpsValue = document.querySelector(".meetups").value
        eventAPIManager.getAllMeetups(meetUpsValue)
        //console.log(meetUpsValue)
-       
+
   })
 
-  
+
 
 
 
@@ -24,7 +24,8 @@ brewSearchBtn.addEventListener("click",function(){
 
     let brewSearch = document.querySelector(".breweries").value
     brewManager.getAllBreweries(brewSearch)
-
+    document.querySelector("#resultsBox")
+    document.querySelector("#resultsBox").innerHTML=""
 
 
 })
@@ -33,7 +34,7 @@ brewSearchBtn.addEventListener("click",function(){
 // parks event listener
 const parkSearchButton = document.querySelector(".parkSearchButton")
 parkSearchButton.addEventListener("click", function () {
-    // pull from json server since api is down and looping through array to list all objects with search criteria, calling function 
+    // pull from json server since api is down and looping through array to list all objects with search criteria, calling function
     const criteria = document.querySelector(".parks").value.replace(" ","_")
     document.querySelector("#resultsBox").innerHTML =""
     const parksPull = {
@@ -46,4 +47,3 @@ parkSearchButton.addEventListener("click", function () {
         }
     parksPull.getAllParks()
 })
-
