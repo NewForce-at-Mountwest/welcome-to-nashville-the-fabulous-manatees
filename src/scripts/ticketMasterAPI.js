@@ -11,7 +11,7 @@ const ticketManager = {
           parsedEvents._embedded.events.forEach(singleEvents =>{
             
             console.log(singleEvents)
-            print(singleEvents)
+            concertPrintToScreen(singleEvents)
           })
       })
   }  
