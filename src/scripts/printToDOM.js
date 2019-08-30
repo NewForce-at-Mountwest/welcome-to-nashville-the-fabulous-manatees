@@ -5,7 +5,10 @@ printBrew.innerHTML+=`<p>
 ${brewName.name}
 </p>
 <button id="brewSaveBTN">Save</button>
-`}
+`
+printBrew.innerHTML=""
+}
+
 
 
 // loop through PARKS and see if they have searched criterion
