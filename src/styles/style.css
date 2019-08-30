@@ -1,0 +1,10 @@
+body{
+    margin-left: 37%;
+}
+#resultsBox{
+    border: 2px solid black;
+    height: auto;
+    width: 60%;
+    padding: 3em;
+    margin-left: -6%;
+}
