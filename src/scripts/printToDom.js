@@ -17,5 +17,5 @@ function print (genreName){
     <button id="concertSaveBTN">Save</button>`
 //     }
 };
-
+//array
 // [""0""].classifications[""0""].genre.name
