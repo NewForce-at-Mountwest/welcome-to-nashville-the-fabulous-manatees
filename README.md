@@ -14,7 +14,7 @@ You will be using all of the skills and concepts that you've learned up to this 
 1. Modular code
 1. Building DOM components
 1. Handling user events
-1. Reading documentation 
+1. Reading documentation
 1. GitHub
 1. CSS
 1. Persistent storage (stretch goal)
@@ -35,7 +35,7 @@ When the user searches for any of the four categories of things to do, the resul
 
 ## Visual Feature List
 
-To help you along, here is a wireframe of how your app might look. 
+To help you along, here is a wireframe of how your app might look.
 **Note:**
 - This wireframe shows a restaurant search instead of a brewery search. We had some problems with the restaurant API, so we switched it to breweries. You should be able to search breweries by name, and it should bring up breweries in Nashville that match that name.
 - This wireframe includes the first stretch goal. For MVP, you would not need the "Save" buttons or the "My Itinerary" section.**
@@ -110,3 +110,17 @@ Once the user has created the itinerary, you would use a PUT request to update a
 1. Add an affordance to finalize an itinerary, and start a new one.
 1. Add ability to view one or all of the itineraries
 
+
+<!-- Instructions to Run -->
+# Welcome to Nashville App
+
+**The following will show you how to clone down the magnificent manatees "Welcome to Nashville App"**
+1. In your gitbash your will need to command git clone and then shift insert the following URL https://github.com/NewForce-at-Mountwest/welcome-to-nashville-the-fabulous-manatees.git
+2. After you have started you browser you should see the Welcome to Nashville app with 4 search bars in the center of the page.
+3. The user should be able to place a search criteria into each search bar (I.E."brewery, a parks name, or concert, or certain meet up hot spot)
+4. After the search button is activated by the user then a list of choice will populate below in which the user will have the option to save for thier individual itenerary.
+
+
+<!-- intructions to clone down
+instructions to run ex start browser
+what the user will see and how to use the search bar -->
