@@ -28,3 +28,19 @@ const parkFx = {
     }
 }
 }
+
+// TicketMaster - Print Results
+
+function concertPrintToScreen (concertResults){
+
+    const printConcert = document.querySelector("#resultsBox")
+
+    printConcert.innerHTML+=
+    `
+    <p>
+    ${concertResults.name}<br>
+    ${concertResults.classifications[0].genre.name}
+    </p>
+    <button id="concertSaveBTN">Save</button>
+    `
+};
